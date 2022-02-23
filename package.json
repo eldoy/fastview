@@ -4,7 +4,8 @@
   "description": "Fast Javascript front end templates",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "serve:test": "nodemon -q -e js,mjs,json,yml,css,md,html,mustache index.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
     "conficurse": "^0.3.5",
     "lodash": "^4.17.21",
     "mustache": "^4.2.0",
-    "sirloin": "^0.22.3"
+    "sirloin": "^0.22.3",
+    "weblang": "^0.8.1"
   }
 }

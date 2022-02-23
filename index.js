@@ -1,5 +1,6 @@
 const _ = require('lodash')
 const loader = require('conficurse')
+const weblang = require('weblang')
 const sirloin = require('sirloin')
 const mustache = require('mustache')
 
@@ -26,12 +27,21 @@ http.get('*', async function(req, res) {
     return 'not found'
   }
 
+  const state = await weblang({
+    ext: {
+      db: async function({ val }) {
+        return val
+      }
+    }
+  })(page)
+  console.log(state)
+
   page.content = ''
 
   for (const v of page.views) {
-    const view = app.views[v]
+    const view = _.get(app.views, v)
     if (view) {
-      page.content += mustache.render(view, page.data)
+      page.content += mustache.render(view, state.vars)
     }
   }
 

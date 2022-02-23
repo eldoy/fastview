@@ -1,7 +1,8 @@
 layout: default
 title: hello
 description: this is the page
-data:
-  name: Peter
+db$project:
+  title: hello
 views:
   - intro
+  - form
