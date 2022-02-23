@@ -1,0 +1,7 @@
+layout: default
+title: hello
+description: this is the page
+data:
+  name: Peter
+views:
+  - intro
