@@ -11,3 +11,43 @@
   {{{content}}}
 </body>
 </html>
+
+
+html:
+  head:
+    meta@asdf:
+      charset: utf-8
+    meta@2:
+      description:
+    title: $title
+
+obj = { a: 1, a: 2 }
+
+
+body:
+  button:
+
+function outerLayout(layout) {
+  return `<html>
+    <body>
+    ${layout()}
+    </body>
+  </html>`
+}
+
+function middleLayout(layout) {
+  return `<ul><li>Tabs</li></ul>${layout()}`
+}
+
+function innerLayout(page) {}
+
+
+
+outerLayout(
+  middleLayout(
+    innerLayout(
+      page()
+    )
+  )
+)
+

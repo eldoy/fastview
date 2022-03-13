@@ -3,3 +3,30 @@
   Number
   <input type="number" value="">
 </label>
+
+img: https://example.com/image.png
+
+
+texarea
+input
+
+input:
+  type: area
+
+
+
+input:
+  type: date
+label:
+  text: Number
+  input:
+    type: number
+
+
+@form:
+  action: project/create
+  model: $project
+  input:
+    type: text
+    success: js/forms/project/create
+    error: js/forms

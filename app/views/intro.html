@@ -1,1 +1,10 @@
 <div>Project: {{project.title}}</div>
+
+div:
+  text: |
+    Project: {{project.title}}
+
+$item: |
+  Project: ${title | trim}
+
+@list$projects: $item

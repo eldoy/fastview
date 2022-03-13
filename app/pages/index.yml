@@ -1,8 +1,12 @@
-layout: default
-title: hello
-description: this is the page
-db$project:
+@layout:
   title: hello
-views:
+  description: this is the page
+@db$project:
+  title: hello
+@js:
+  - bundle/all
+@css:
+  - bundle/all
+@views:
   - intro
   - form
