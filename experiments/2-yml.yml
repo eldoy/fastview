@@ -1,0 +1,19 @@
+html:
+  head:
+    title: what is going on?
+  body:
+    div.hero#id:
+      img:
+        src: {{hello}}
+    form:
+      action: /hello
+      field: name
+        name: email
+      fieldset:
+        legend: hello
+        checkbox:
+          name: nisse
+        checkbox:
+          name: nisse
+      button: Save
+
