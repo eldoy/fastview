@@ -57,3 +57,14 @@ We want the runner window to tell you what to fix all the time. Can also include
 ### Custom editor or VSCodium plugin
 
 With our own editor, we could double click on "handleSave" and jump straight to the file (function).
+
+
+### Transform flow
+
+YML > Weblang > JSON > Mustache > Javascript > HTML
+
+Do we need some kind of Brain matter for YAML?
+
+It will be possible to "compile" the templates, at least until Mustache? Or further?
+
+Should we measure speed? How slow is YAML actually?
