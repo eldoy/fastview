@@ -1,0 +1,33 @@
+# Pipes variables
+# Can only do tuples
+=hello: hello |
+  upcase test=3 what=3 what=nesten |
+  downcase something=nice
+
+# Renderer integration
+=hello:
+  nisse: 1
+  helper: 2
+  reindeer: 3
+
+=result: $hello |
+  ```
+  FirstName & ' ' & LastName
+  ```
+@log: result
+
+=result@join:
+  - $nisse
+  - $baner
+
+=a:
+  - $nisse
+  - $baner
+=b:
+  - $nisse
+  - $baner
+=c@merge:
+  - $a
+  - $b
+
+@return: $c
