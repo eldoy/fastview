@@ -1,6 +1,0 @@
-@include:
-  - general
-  - dialog
-
-body:
-  background-color: '#fff'
