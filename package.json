@@ -1,6 +1,6 @@
 {
   "name": "fastview",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Fast Javascript front end templates",
   "main": "index.js",
   "scripts": {
